@@ -6,7 +6,7 @@ const ItemSchema = new Schema({
   author: { type: String },
   price: { type: Number, required: true },
   onSale: { type: Boolean },
-  imagePath: { type: String, required: true },
+  imagePath: { type: String },
   created_at: { type: Date, default: Date.now },
 });
 
