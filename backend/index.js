@@ -8,6 +8,7 @@ const express = require("express");
 const morgan = require("morgan");
 const multer = require("multer");
 const path = require("path");
+const cors = require("cors");
 
 //Initialiations
 //this is the server
@@ -24,13 +25,14 @@ const storage = multer.diskStorage({
   destination: path.join(__dirname, "public/uploads"),
   filename(req, file, cb) {
     //call each image with the exact time to have different names
-    cb(null, newDate().getTime() + path.extname(file.originalname));
+    cb(null, new Date().getTime() + path.extname(file.originalname));
   },
 });
 //only one image at a time
 app.use(multer({ storage }).single("image"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.use("/api/items", require("./routes/items"));

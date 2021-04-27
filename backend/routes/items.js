@@ -11,8 +11,16 @@ router.get("/", async (req, res) => {
 
 //create new items
 router.post("/", async (req, res) => {
-  const { artType, article, author, price, onSale } = req.body;
-  const newItem = new Item({ artType, article, author, price, onSale });
+  const { artType, article, author, price, created_at } = req.body;
+  const imagePath = "/uploads/" + req.file.filename;
+  const newItem = new Item({
+    artType,
+    article,
+    author,
+    price,
+    imagePath,
+    created_at,
+  });
   await newItem.save();
   res.json({ message: "Item saved on DB" });
 });
