@@ -1,5 +1,7 @@
 const { Router } = require("express");
 const router = Router();
+const { unlink } = require("fs-extra");
+const path = require("path");
 
 const Item = require("../models/Item");
 
@@ -27,7 +29,8 @@ router.post("/", async (req, res) => {
 
 //delete items
 router.delete("/:id", async (req, res) => {
-  await Item.findByIdAndDelete(req.params.id);
+  const item = await Item.findByIdAndDelete(req.params.id);
+  unlink(path.resolve("./backend/public" + item.imagePath));
   res.json({ message: "Item deleted" });
 });
 

@@ -20,7 +20,7 @@ class ItemService {
   }
 
   async deleteItem(itemId) {
-    const res = await fetch("${this.URI}/${itemId}", {
+    const res = await fetch(`${this.URI}/${itemId}`, {
       headers: {
         "Content-Type": "application/json",
       },

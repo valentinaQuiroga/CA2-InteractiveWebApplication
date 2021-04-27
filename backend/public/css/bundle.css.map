@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack://javascript-fullstack-simple/./frontend/styles/app.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,YAAY;AACd","file":"css/bundle.css","sourcesContent":["body {\r\n  background: green;\r\n  color: white;\r\n}\r\n"],"sourceRoot":""}
+{"version":3,"sources":["webpack://javascript-fullstack-simple/./frontend/styles/app.css"],"names":[],"mappings":"AAAA,kBAAkB","file":"css/bundle.css","sourcesContent":["/* meter estilos */\r\n"],"sourceRoot":""}
