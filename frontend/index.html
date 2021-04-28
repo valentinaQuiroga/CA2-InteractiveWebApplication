@@ -1,11 +1,42 @@
+<!-- /***************************************************************************************
+ *    Title: <Core Version of NODE JS, JAVASCRIPT, and interactive CARDS>
+ *    Author: <Jesus Fazt - Fazt Code>
+ *    Date: <February 2019>
+ *    Code version: <1>
+ *    Availability: <https://www.youtube.com/watch?v=Fs1G1BcP4BI&t=252s>
+ *
+ ***************************************************************************************/ -->
+<!-- /***************************************************************************************
+ *    Title: <Polo Templates>
+ *    Author: <Polo>
+ *    Date: <2017 POLO -  Responsive Multi-Purpose HTML5 Template. All Rights Reserved>
+ *    Code version: <1>
+ *    Availability: <https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923>
+ *
+ ***************************************************************************************/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Art Gallery</title>
+    <meta
+      name="Valentina Quiroga"
+      content="Interactive Web Applications - NodeJS , MongoDB , Webpack , Heroku"
+    />
+    <meta
+      name="CA 2 Interactive Web Application"
+      content="Mockup Art Gallery"
+    />
+    <!-- Document title -->
+    <title>Valentina Art Gallery</title>
     <!-- Bootsrap -->
+    <!-- Stylesheets & Fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="https://bootswatch.com/4/lux/bootstrap.min.css"
@@ -17,9 +48,70 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-white bg-white">
-      <div class="container">
-        <a href="/" class="navbar-brand">Art Gallery</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!--Logo-->
+      <div id="logo">
+        <img src="/frontend/src/static/logo-dark.png" alt="Art gallery Logo" />
+      </div>
+      <!--End: Logo-->
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor03"
+        aria-controls="navbarColor03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarColor03" style="">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropdown</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
       </div>
     </nav>
 
