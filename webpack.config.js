@@ -3,8 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { LoaderTargetPlugin } = require("webpack");
 const { loader } = require("mini-css-extract-plugin");
+const urlLoader = require("url-loader");
 
-const devMode = process.env.NODE_ENV !== "production";
+const devMode = process.env.NODE_ENV !== "development";
 
 module.exports = {
   entry: "./frontend/app.js",
@@ -25,12 +26,8 @@ module.exports = {
         ],
       },
       {
-        entry: "./frontend/index.html",
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        use: [{ loader: "file-loader" }],
-        options: "[name].[ext]",
-        outputPath: "public/static/",
-        useRelativePath: true,
+        test: /\.(png|jpg)$/,
+        loader: "url-loader",
       },
     ],
   },

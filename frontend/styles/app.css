@@ -1,1 +1,7 @@
 /* meter estilos */
+#logo {
+  background-image: url("/frontend/src/static/logo-dark.png");
+  padding-right: 215px;
+  padding-bottom: 54px;
+  margin-right: 20px;
+}

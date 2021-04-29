@@ -1,4 +1,5 @@
 import "./styles/app.css";
+import "./src/static/logo-dark.png";
 
 import UI from "./UI";
 
