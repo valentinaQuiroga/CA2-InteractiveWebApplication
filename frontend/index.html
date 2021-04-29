@@ -48,115 +48,210 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="d-flex flex-grow-1">
-        <span class="w-100 d-lg-none d-block"
-          ><!-- hidden spacer to center brand on mobile --></span
-        >
-        <a class="navbar-brand d-none d-lg-inline-block" href="#">
-          <!--Logo-->
-          <div id="logo">
-            <a
-              href="index.html"
-              class="logo"
-              data-dark-logo="/frontend/src/static/logo-dark.png"
-            >
-              <!-- <img
-                src="/frontend/src/static/logo-dark.png"
-                alt="Art gallery Logo"
-              /> -->
-            </a>
-          </div>
-          <!--End: Logo-->
-        </a>
-        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-        </a>
-        <div class="w-100 text-right">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#myNavbar"
+    <div id="wrapper">
+      <!-- nav bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+          <span class="w-100 d-lg-none d-block"
+            ><!-- hidden spacer to center brand on mobile --></span
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-      <div
-        class="collapse navbar-collapse flex-grow-1 text-right"
-        id="myNavbar"
-      >
-        <ul class="navbar-nav ml-auto flex-nowrap">
-          <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item nav-active"
-              >Our Solution</a
+          <a class="navbar-brand d-none d-lg-inline-block" href="#">
+            <!--Logo-->
+            <div id="logo">
+              <a
+                href="index.html"
+                class="logo"
+                data-dark-logo="/frontend/src/static/logo-dark.png"
+              >
+              </a>
+            </div>
+            <!--End: Logo-->
+          </a>
+          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+          </a>
+          <div class="w-100 text-right">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#myNavbar"
             >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">How We Help</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-md-4 containerMessage">
-          <form id="item-form" class="card card-body">
-            <div class="form-group">
-              <label for=""></label>
-              <input
-                type="text"
-                id="artType"
-                class="form-control"
-                placeholder="Art Type"
-                autofocus
-              />
-            </div>
-            <div class="form-group">
-              <label for=""></label>
-              <input
-                type="text"
-                id="article"
-                class="form-control"
-                placeholder="Article"
-              />
-            </div>
-            <div class="form-group">
-              <label for=""></label>
-              <input
-                type="text"
-                id="author"
-                class="form-control"
-                placeholder="Author"
-              />
-            </div>
-            <div class="form-group">
-              <label for=""></label>
-              <input
-                type="number"
-                id="price"
-                class="form-control"
-                placeholder="Price"
-              />
-            </div>
-
-            <div class="input-group mb-3">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="image" />
-                <label for="image" class="custom-file-label"></label>
-              </div>
-            </div>
-            <button class="btn btn-primary">Save item</button>
-          </form>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
         </div>
-        <div class="col-md-8" id="items-cards"></div>
+        <div
+          class="collapse navbar-collapse flex-grow-1 text-right"
+          id="myNavbar"
+        >
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item nav-active"
+                >Our Solution</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">How We Help</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- nav bar end -->
+
+      <!-- SECTION IMAGE FULLSCREEN -->
+      <section
+        class="parallax fullscreen homePic"
+        style="
+          background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pdfemalenudebatch2-150-gloy.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f2f2946693065cf25c2d9ca5259e12be');
+        "
+      >
+        <div class="container container-fullscreen text-center">
+          <div class="text-middle">
+            <h1 class="text-uppercase text-large text-light titulo-entrada">
+              CREATIVE DUBLIN ART
+            </h1>
+            <p class="lead text-light">
+              Beautiful art pieces are now on sale! Ready to be part of your
+              home
+            </p>
+            <a class="btn btn-light btn-outline" href="index.html">Buy NOW</a>
+          </div>
+        </div>
+      </section>
+      <!-- end: SECTION IMAGE FULLSCREEN -->
+
+      <!-- portfolio -->
+      <div class="container">
+        <h1 class="gallery-titulo">
+          Gallery
+          <small class="text-muted"
+            >&#9830; Photography &#9826; Paintings &#9826; Prints &#9826; Frames
+            &#9830;
+          </small>
+        </h1>
+
+        <div class="gallery">
+          <div class="gallery-item">
+            <img
+              class="gallery-image"
+              src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+              alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              class="gallery-image"
+              src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop"
+              alt="sunset behind San Francisco city skyline"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              class="gallery-image"
+              src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop"
+              alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              class="gallery-image"
+              src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop"
+              alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              class="gallery-image"
+              src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop"
+              alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              class="gallery-image"
+              src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop"
+              alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- end portfolio -->
+
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-md-4 containerMessage">
+            <form id="item-form" class="card card-body">
+              <div class="form-group">
+                <label for=""></label>
+                <input
+                  type="text"
+                  id="artType"
+                  class="form-control"
+                  placeholder="Art Type"
+                  autofocus
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for=""></label>
+                <input
+                  type="text"
+                  id="article"
+                  class="form-control"
+                  placeholder="Article"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for=""></label>
+                <input
+                  type="text"
+                  id="author"
+                  class="form-control"
+                  placeholder="Author"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for=""></label>
+                <input
+                  type="number"
+                  id="price"
+                  class="form-control"
+                  placeholder="Price"
+                  required
+                />
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="custom-file">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="image"
+                    required
+                  />
+                  <label for="image" class="custom-file-label"></label>
+                </div>
+              </div>
+              <button class="btn btn-outline-success">Save item</button>
+            </form>
+          </div>
+          <div class="col-md-8" id="items-cards"></div>
+        </div>
       </div>
     </div>
   </body>
