@@ -37,16 +37,6 @@ class UI {
           ${format(item.created_at)}
         </div>
       </div>
-      <div class="card mb-3">
-        <img src="http://localhost:3000${
-          item.imagePath
-        }" class="img-fluid" alt="">
-        <div class="card-body">
-          <p class="card-text">${item.artType}</p>
-          <h5 class="card-title">${item.article}</h5>
-          <p class="card-text">${item.author}</p>
-          <p class="card-text">‎€ ${item.price}.00</p>
-        </div>
       </div>
       `;
       itemsCardContainer.appendChild(div);
