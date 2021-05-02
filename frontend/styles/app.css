@@ -55,7 +55,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -206,8 +206,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace; */
   font-size: 1em;
 }
 
@@ -10144,10 +10144,10 @@ button.bg-dark:focus {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.text-monospace {
+/* .text-monospace {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace !important;
-}
+} */
 
 .text-justify {
   text-align: justify !important;
@@ -10695,7 +10695,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 body {
   min-height: 100vh;
   background-color: #fafafa;
-  font-family: "Montserrat", Arial, sans-serif;
+  /*   font-family: "Montserrat", Arial, sans-serif; */
 }
 
 .container {
@@ -10705,7 +10705,7 @@ body {
 }
 
 .heading {
-  font-family: "Montserrat", Arial, sans-serif;
+  /*  font-family: "Montserrat", Arial, sans-serif; */
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.5;
