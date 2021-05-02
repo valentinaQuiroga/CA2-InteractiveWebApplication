@@ -1,6 +1,6 @@
 class ItemService {
   constructor() {
-    this.URI = "http://localhost:3000/api/items";
+    this.URI = "/api/items";
   }
 
   async getItems() {
