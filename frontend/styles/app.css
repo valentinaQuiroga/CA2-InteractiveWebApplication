@@ -118,6 +118,7 @@ body {
   margin: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  padding: 90px;
 }
 
 .gallery-image {
@@ -154,7 +155,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .gallery-titulo {
-  padding-top: 5%;
+  padding-top: 8%;
   padding-bottom: 1%;
   letter-spacing: 10px;
 }
@@ -163,6 +164,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
   color: #d4dce1 !important;
   font-size: 50%;
   letter-spacing: 10px;
+}
+
+.text-bottom-cd {
+  font-size: 90%;
 }
 
 /* ////////////////// */
@@ -253,4 +258,23 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .credits a {
   color: #000;
+}
+
+.gallery-new {
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+.container-catalog {
+  padding-left: 16%;
+  padding-right: 16%;
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery-item {
+    margin-left: -35%;
+  }
 }

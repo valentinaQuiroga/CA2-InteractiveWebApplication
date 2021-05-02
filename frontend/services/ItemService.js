@@ -10,13 +10,29 @@ class ItemService {
     return items;
   }
 
+  async getItem(itemId) {
+    const res = await fetch(`${this.URI}/${itemId}`);
+    // convert the String response to json
+    const item = await res.json();
+    return item;
+  }
+
+  async putItem(itemId, item) {
+    const res = await fetch(`${this.URI}/${itemId}`, {
+      method: "PUT",
+      body: item,
+    });
+    const data = await res.json();
+    console.log(item);
+  }
+
   async postItem(item) {
     const res = await fetch(this.URI, {
       method: "POST",
       body: item,
     });
     const data = await res.json();
-    console.log(data);
+    console.log(item);
   }
 
   async deleteItem(itemId) {
