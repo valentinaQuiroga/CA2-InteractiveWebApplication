@@ -1,3 +1,12 @@
+/* ***************************************************************************************
+ *    Title: <Core Version of NODE JS, JAVASCRIPT, and interactive CARDS>
+ *    Author: <Jesus Fazt - Fazt Code>
+ *    Date: <February 2019>
+ *    Code version: <1>
+ *    Availability: <https://www.youtube.com/watch?v=Fs1G1BcP4BI&t=252s>
+ *
+ *************************************************************************************** */
+
 const { Schema, model } = require("mongoose");
 
 const ItemSchema = new Schema({
